@@ -1,0 +1,110 @@
+/* Ana stil tanımlamaları */
+body {
+    background-color: #f8f9fa;
+}
+
+/* Navbar stil ayarları */
+.navbar {
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    font-size: 1.05rem;
+    letter-spacing: 0.01em;
+}
+
+.navbar .navbar-brand {
+    font-weight: 600;
+    font-size: 1.25rem;
+    letter-spacing: 0.03em;
+}
+
+.navbar .nav-link {
+    transition: background 0.2s, color 0.2s;
+    border-radius: 4px;
+    margin-right: 2px;
+}
+
+.navbar .nav-link.active, .navbar .nav-link:hover {
+    background: #212529;
+    color: #ffc107 !important;
+}
+
+.navbar .dropdown-menu {
+    min-width: 180px;
+    font-size: 1rem;
+}
+
+.navbar .dropdown-item:active {
+    background: #ffc107;
+    color: #212529;
+}
+
+/* Dashboard kartları */
+.card {
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.card-header {
+    background-color: #f8f9fa;
+    border-bottom: 1px solid rgba(0,0,0,0.125);
+}
+
+/* Arama formu */
+.search-form {
+    position: relative;
+}
+
+.search-form input {
+    padding-right: 40px;
+}
+
+#searchResults {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    display: none;
+}
+
+.list-group.position-absolute {
+    z-index: 5000 !important;
+}
+
+#personel_results, #alet_results {
+    z-index: 5000 !important;
+}
+
+/* Bildirimler */
+.notification {
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+}
+
+.notification.warning {
+    background-color: #fff3cd;
+    border: 1px solid #ffeeba;
+    color: #856404;
+}
+
+.notification.danger {
+    background-color: #f8d7da;
+    border: 1px solid #f5c6cb;
+    color: #721c24;
+}
+
+/* Responsive düzenlemeler */
+@media (max-width: 768px) {
+    .card-deck {
+        display: block;
+    }
+    
+    .card {
+        margin-right: 0 !important;
+        margin-left: 0 !important;
+    }
+}
